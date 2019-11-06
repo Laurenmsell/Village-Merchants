@@ -43,7 +43,7 @@ a:hover { color: black; }
 
 .grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-gap: 40px;
 	width: 60%;
 	margin: auto;
@@ -52,6 +52,25 @@ a:hover { color: black; }
 .grid div {
 	background-color: #ccc;
 	padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+	body{
+		background-color: lightblue;
+		}
+
+	.grid {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 40px;
+	width: 70%;
+	margin: auto;
+		}
+}
+
+@media only screen and (min-width: 1024px) {
+	body{
+		background-color: pink;
+		}
 }
 /*
 font-family: 'Mansalva', cursive;
