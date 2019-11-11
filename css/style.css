@@ -39,38 +39,50 @@ a {
 	color: red;
 	text-decoration: none;
 	 }
-a:hover { color: black; }
+a:hover { 
+	color: black; 
+	}
+
+
+.home {
+	margin-top:5%;
+	margin-left: 20px;
+	margin-right:20px;
+
+}
 
 .grid {
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: 40px;
-	width: 60%;
-	margin: auto;
+	grid-template: 1fr 1fr 1fr;
+	margin:3%;
 }
 
 .grid div {
-	background-color: #ccc;
-	padding: 20px;
+	background-color: transparent;
+	margin-top:50%;
 }
-
 @media only screen and (min-width: 768px) {
 	body{
 		background-color: lightblue;
 		}
 
-	.grid {
+.grid {
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 40px;
-	width: 70%;
+	grid-gap: 10px;
 	margin: auto;
 		}
+
+.home { 
+	margin-left: 50%;
+	margin-right: 10%;
+	margin-top: 40px;
+}
 }
 
 @media only screen and (min-width: 1024px) {
 	body{
-		background-color: pink;
-		}
+
+			}
 }
 /*
 font-family: 'Mansalva', cursive;
