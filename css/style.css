@@ -1,6 +1,10 @@
 /* Enter your Styles below! */
 
+.logo {
+	height: 0px;
+	width: 0px;
 
+}
 body { 
 	font-family: Helvetica, sans-serif;
 	font-size: 16px;
@@ -43,6 +47,11 @@ a:hover {
 	color: black; 
 	}
 
+main{
+	opacity: 0.75;
+
+}
+
 
 .home {
 	margin-top:5%;
@@ -53,7 +62,7 @@ a:hover {
 
 .grid {
 	display: grid;
-	grid-template: 1fr 1fr 1fr;
+	grid-template: 1fr 1fr;
 	margin:3%;
 }
 
@@ -71,13 +80,19 @@ a:hover {
 	grid-gap: 10px;
 	margin: auto;
 		}
+.logo {
+	height:100px;
+	width: 100px;
+
+}
 
 .home { 
-	margin-left: 50%;
-	margin-right: 10%;
+	margin-right: 70%;
+	margin-left: 10px;
 	margin-top: 40px;
+
 }
-}
+
 
 @media only screen and (min-width: 1024px) {
 	body{
