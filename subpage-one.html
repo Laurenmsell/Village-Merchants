@@ -9,22 +9,53 @@
 	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.typekit.net/crf2kzh.css">
 </head>
+
 <body>
-	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
-	<header>
-		<nav>
-		<li><a href="subpage-one.html">home</a></li>
-		<li><a href="subpage-two.html">buy sell trade</a></li>
-		<li><a href="subpage-three.html">blog</a></li>
-		<li><a href="subpage-four.html">contact</a></li>
-		</ul>
+
+<header>
+	<div class="logo">
+	<img src="images/logo.png" alt="brand logo">
+	</div>
+
+  <a href="#main-menu"
+     id="main-menu-toggle"
+     class="menu-toggle"
+     aria-label="Open main menu">
+    <span class="sr-only">Open main menu</span>
+    <span class="fa fa-bars" aria-hidden="true"></span>
+  </a>
+
+<h1 class="title">about</h1>
+
+  <nav id="main-menu" class="main-menu" aria-label="Main menu">
+    <a href="#main-menu-toggle" 
+    	id= "main-menu-toggle"
+    	class="menu-close"
+    	aria-label="Close main menu">
+    	<span class="sr-only">Close main menu</span>
+    <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+    	<li><a href="index.html">home</a></li>
+   		<li><a href="Subpage-one.html">about</a></li>
+   		<li><a href="Subpage-two.html">buy sell trade</a></li>
+    	<li><a href="blog.html">blog</a></li>
+    	<li><a href="contact.html">contact</a></li>
+    </ul>
 	</nav>
-		<h1>about</h2>
-	</header>
+	<a href="#main-menu-toggle"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></a>
+     </header>
+
+	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
 
 	<main>
-		<div> <img src="images/inside.jpg"></div>
+		<div class> <img src="images/clothes1.jpg"></div>
 		<p>Founded in 1998, Village Merchants is a consignment and resale shop located in the heart of SE Portland. Village Merchants sells everything from the practical to the beautiful and everything else in between.
 		</p>
 
