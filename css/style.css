@@ -1,4 +1,4 @@
-/* Enter your Styles below! */
+/* 
 .sr-only {
   position: absolute;
   width: 1px;
@@ -42,7 +42,7 @@
   list-style: none;
   margin: 0;
   padding: 2.5em 0 0;
-  /* Hide shadow w/ -8px while 'closed' */
+ Hide shadow w/ -8px while 'closed' 
   -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
   -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
   box-shadow: -8px 0 8px rgba(0,0,0,.5);
@@ -96,19 +96,66 @@
 .main-menu[aria-expanded="true"] ul {
   position: relative;
   z-index: 1000;
+}*/
+.moveMe {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20vh;
+    white-space: nowrap;
+    position: relative;
+    animation-name: moveMe;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-play-state: paused;
 }
+
+ul {
+	color: #E8A1A6;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: #E8A1A6;
+}
+
+.moveMe a:hover {
+ color: #E8A1A6;
+ position: relative;
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+} 
+
+a:link {
+color: #cc0000;
+}
+
+a { text-decoration: none;
+	 }
+
+a:visited {
+	color: white;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: #E8A1A6;
+}
+
+@-webkit-keyframes moveMe {
+
+
+}
+
+.moveMe:hover {
+
+	color: #000;
+}
+
 
 .logo {
 	height: 0px;
 	width: 0px;
-
 }
+
+
+
+
 body { 
-	margin: 10px 30px;
-	font-family: serifa, serif;
-	font-weight: 100;
-	font-style: normal;
-	
+
 	 }
 
 h2, h3, h4 {
@@ -117,7 +164,7 @@ h2, h3, h4 {
 	font-style: normal;}
 
 h1 {
-	font-family: moret, serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 48px;
@@ -125,14 +172,12 @@ h1 {
 	display: absolute;
 	z-index: 999;
 	text-align: right;
-	margin-bottom: 5px;
-	margin-top: 5px;
 }
 
 h2 {
-	font-family: orpheuspro,serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	font-style: italic;
+	font-style: normal;
 	font-size: 30px;
 	line-height: 1.1;
 	margin-top: 30px;
@@ -149,6 +194,8 @@ h4 {
 	font-size: 24px;
 }
 
+
+
 blockquote {
 	margin: 20px 60px;
 	font-family: Helvetica, sans-serif;
@@ -157,14 +204,6 @@ blockquote {
 /* ensures that your images stretch the width of their containers */
 img { width: 100%; }
 
-a { 
-	color: red;
-	text-decoration: none;
-	 }
-
-a:hover { 
-	color: black; 
-	}
 
 main{
 	opacity: 0.75;
@@ -173,6 +212,9 @@ main{
 }
 
 p {
+	font-family: serifa, serif;
+	font-weight: 100;
+	font-style: normal;	
 	padding: 5px 0px;
 	line-height: 1.2em;
 	font-size: 14px;
@@ -243,12 +285,9 @@ padding-top:10px;}
 	background-color: transparent;
 	}
 
-
-
-
 @media only screen and (min-width: 768px) {
 	body{
-		background-color: lightblue;
+		background-color: white;
 		}
 
 .parent {

@@ -10,76 +10,45 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://use.typekit.net/crf2kzh.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
+<body>	
 	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
 <header>
-	<h1 class="logo">
-		<img src="images/logo.png" alt="brand logo">
-	</h1>
-
-<a href="#main-menu"
-     id="main-menu-toggle"
-     class="menu-toggle"
-     aria-label="Open main menu">
-    <span class="sr-only">Open main menu</span>
-    <span class="fa fa-bars" aria-hidden="true"></span>
-  </a>
-
-  <nav id="main-menu" class="main-menu" aria-label="Main menu">
-    <a href="#main-menu-toggle" 
-    	id= "main-menu-toggle"
-    	class="menu-close"
-    	aria-label="Close main menu">
-    	<span class="sr-only">Close main menu</span>
-    <span class="fa fa-close" aria-hidden="true"></span>
-    </a>
+	
     <ul>
-    	<li><a href="index.html">home</a></li>
-   		<li><a href="Subpage-one.html">about</a></li>
-   		<li><a href="Subpage-two.html">buy sell trade</a></li>
-    	<li><a href="blog.html">blog</a></li>
-    	<li><a href="contact.html">contact</a></li>
+    	<li class="moveMe"><a href="index.html">village merchants village merchants village merchants</a></li>
+   		<li class="moveMe"><a href="about.html">about about about about</a></li>
+   		<li class="moveMe"><a href="buy.html">buy sell trade buy sell trade buy sell trade</a></li>
+    	<li class="moveMe"><a href="blog.html">blog blog blog blog</a></li>
+    	<li class="moveMe"><a href="contact.html">contact contact contact</a></li>
     </ul>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+      $('.moveMe').click(function(){
+        $('.moveMe').css('animation-play-state', 'running');
+      })
+   </script>
+
 	</nav>
-	<a href="#main-menu-toggle"
-     class="backdrop"
-     tabindex="-1"
-     aria-hidden="true" hidden></a>
 	</header>
 
 	<main>
 		<div>
-		
-
-		<div class="homeimg">
-			<img src="images/storefront.jpg">
-		</div>
-		<h2>20 years of recycling in Portland!</h2>	
+		<h2>20 years of recycling Portland!
+		</h2>	
 		<div>
 			<p> A Big thank you to the Village Community for supporting us for all of these years! We’ve managed to create quite a fun way to keep our gently used treasures out of the landfill and into the arms of new owners. I feel proud that every day feels like Earth Day at Village.</p>
 		</div>
 
 		</div>
 	</main>
-	<footer>
-		<div class="grid">
-		<div>
-			<ul>
-			<li><a href="subpage-one.html">about</a></li>
-			<li><a href="subpage-two.html">buy sell trade</a></li>
-			<li><a href="subpage-three.html">blog</a></li>
-			<li><a href="subpage-four.html">contact</a></li>
-			</ul>
-		</div>
-		<div>&copy; village merchants</div>
-		<div>4035 SE Division St., Portland OR 97202
-Mon-Sat 10am-4pm
-503-234-6343</div>
-		</div>
-		</footer>
 			<script
 
   	src="https://code.jquery.com/jquery-3.4.1.min.js"
