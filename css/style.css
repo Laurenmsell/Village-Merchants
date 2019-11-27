@@ -31,16 +31,15 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: left;
 	margin-bottom: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 20px;
 	color: #E8A1A6;	
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
+	width: 200px;
+	text-align: center;
 
 
 }
@@ -166,7 +165,7 @@ footer{
 .homenav {
 	display: block;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 70px;
+	font-size: 5vh;
     white-space: nowrap;
     width: 155%;
     position: relative;
@@ -348,17 +347,18 @@ padding-top:10px;}
     
 .homenav {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 20vh;
+	font-size: 15vh;
     white-space: nowrap;
     text-overflow: hidden;
     position: relative;
+    padding-bottom: 10px;
     color: #E8A1A6;
 	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: #E8A1A6;
 }
 
 .homenav div {
-  animation: marquee 5s linear infinite;
+  animation: marquee 45s linear infinite;
 }
 
 /*.homenav a:hover {
@@ -424,7 +424,7 @@ padding-top:10px;}
     }
 
 header.nav, .menu-mobile {
-        display: none;
+	display: none;
     }
 
 .about img{ 
