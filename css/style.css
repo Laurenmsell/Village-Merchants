@@ -31,12 +31,17 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 30px;
-	text-align: center;
+	font-size: 40px;
+	text-align: left;
 	margin-bottom: 10px;
-	margin-left: 30px;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 20px;
-	color: #E8A1A6;
+	color: #E8A1A6;	
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+
 
 }
 
@@ -65,10 +70,10 @@ h3 {
 	margin-top: 30px;
 	margin-bottom: 10px;
 	display: block;
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
-	text-align: center;
 }
 
 /* ensures that your images stretch the width of their containers */
@@ -84,6 +89,7 @@ main{
 	font-family: serifa, serif;
 	font-weight: 100;
 	font-style: normal;	
+
 }
 
 p {
@@ -92,7 +98,7 @@ p {
 	font-style: normal;	
 	padding: 5px 0px;
 	line-height: 1.2em;
-	font-size: 14px;
+	font-size: 16px;
 	/*margin-right: 10%;
 	margin-left: 10%;*/
 	display: block;
@@ -118,7 +124,7 @@ footer{
 	font-style: normal;
 	overflow: hidden;
 	position: relative;
-	padding-top: 15px;
+	padding-top: 10px;
 	background-color: #E8A1A6;
 	color: white;
 
@@ -158,13 +164,19 @@ footer{
 } */
 
 .homenav {
+	display: block;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 20vh;
+	font-size: 70px;
     white-space: nowrap;
+    width: 155%;
     position: relative;
     color: #E8A1A6;
 	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: #E8A1A6;
+	overflow: hidden;
+	padding-bottom: 10px;
+
+
 }
 
 .homenav a:hover {
@@ -173,8 +185,8 @@ footer{
 	-moz-transform:translateX(100%);
 	-webkit-transform:translateX(100%);	
 	transform:translateX(100%);
-	animation: marquee 15s linear infinite;
-	
+	animation: marquee 10s linear infinite;
+
 } 
 
 .icon {
@@ -345,6 +357,10 @@ padding-top:10px;}
 	-webkit-text-stroke-color: #E8A1A6;
 }
 
+.homenav div {
+  animation: marquee 5s linear infinite;
+}
+
 /*.homenav a:hover {
 	color: #E8A1A6;
 	position: relative;
@@ -363,8 +379,6 @@ padding-top:10px;}
 }
 
 .marquee div {
-
-
   animation: marquee 25s linear infinite;
 }
 
