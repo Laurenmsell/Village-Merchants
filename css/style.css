@@ -33,7 +33,7 @@ h1 {
 	font-style: normal;
 	font-size: 30px;
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 	margin-left: 30px;
 	padding-top: 20px;
 	color: #E8A1A6;
@@ -72,7 +72,10 @@ h3 {
 }
 
 /* ensures that your images stretch the width of their containers */
-img { width: 100%; }
+img { 
+	width: 100%;
+	margin-top: 15px;
+}
 
 
 main{
@@ -107,6 +110,43 @@ footer{
 }
 
 
+.marquee {
+	height: 25px;
+	width: 765px;
+	font-family: serifa, serif;
+	font-weight: 400;
+	font-style: normal;
+	overflow: hidden;
+	position: relative;
+	padding-top: 15px;
+	background-color: #E8A1A6;
+	color: white;
+
+	}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+@keyframes homenav {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
 
 /*.nav, .desktop {
     display: block;
@@ -117,7 +157,7 @@ footer{
     z-index: 900;
 } */
 
-.marquee {
+.homenav {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20vh;
     white-space: nowrap;
@@ -127,16 +167,14 @@ footer{
 	-webkit-text-stroke-color: #E8A1A6;
 }
 
-.marquee a:hover {
+.homenav a:hover {
 	color: #E8A1A6;
 	position: relative;
 	-moz-transform:translateX(100%);
 	-webkit-transform:translateX(100%);	
 	transform:translateX(100%);
-	animation-name: moveMe;
-	animation-duration: 4s;
-    animation-iteration-count: 3;
-    animation-play-state: paused;
+	animation: marquee 15s linear infinite;
+	
 } 
 
 .icon {
@@ -296,7 +334,7 @@ padding-top:10px;}
 @media only screen and (min-width: 768px) {
     /* START of desktop menu for 768 media query */
     
-.marquee {
+.homenav {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20vh;
     white-space: nowrap;
@@ -307,7 +345,7 @@ padding-top:10px;}
 	-webkit-text-stroke-color: #E8A1A6;
 }
 
-.marquee a:hover {
+/*.homenav a:hover {
 	color: #E8A1A6;
 	position: relative;
 	-moz-transform:translateX(100%);
@@ -317,8 +355,18 @@ padding-top:10px;}
 	animation-duration: 4s;
     animation-iteration-count: 3;
     animation-play-state: paused;
-}  
+}*/  
 
+.marquee {
+	height: 25px;
+	width: 2000px;
+}
+
+.marquee div {
+
+
+  animation: marquee 25s linear infinite;
+}
 
 .menu-desktop {
 	font-family: 'Montserrat', sans-serif;
@@ -382,6 +430,8 @@ header.nav, .menu-mobile {
 	grid-column-gap: 10px;
 	padding: 5px;
 }
+
+
 
 .div1 { grid-area: 1 / 1 / 4 / 5; }
 .div2 { grid-area: 1 / 5 / 4 / 9; }
