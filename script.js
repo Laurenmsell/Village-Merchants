@@ -17,6 +17,29 @@ $('.slideshow').square1({
 //       })
 
 
+
+function navScroll() {
+    $(".homenav a, .menu-mobile a, .menu-desktop a").on('click', function(event) {
+        var hash = event.currentTarget.hash;
+        var position = $(hash).offset().top;
+        $("body,html").animate({
+            scrollTop: position
+          },
+          800 //speed
+        );
+    });
+
+    $(window).scroll(function () {
+        var scrollPosition = $(window).scrollTop();
+        if (scrollPosition < 750){
+            $('.nav').fadeOut(500, function() {})
+        };
+        if (scrollPosition > 750){
+            $('.nav').fadeIn(500, function() {})
+        };
+    });
+}
+
 function toggleIcon() {
     $('.icon').on('click', function(){
         $('.icon').toggleClass('active');
@@ -56,3 +79,4 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 $(toggleIcon);
 $(closeMobileMenu);
 $(desktopMenu);
+$(navScroll);

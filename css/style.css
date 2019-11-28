@@ -1,3 +1,7 @@
+html, body{
+	width:100%;
+}
+
 @-webkit-keyframes marquee {
 0% {
     transform: translate(0, 0);
@@ -51,12 +55,12 @@ h2 {
 	font-size: 30px;
 	color: #E8A1A6;
 	line-height: 1.1;
-	margin-top: 30px;
 	margin-bottom: 10px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	padding-top: 20px;
+	width: 90%;
 }
 
 h3 {
@@ -69,10 +73,14 @@ h3 {
 	margin-top: 30px;
 	margin-bottom: 10px;
 	display: block;
-	text-align: center;
+	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	width: 90%;
+}
+
+header{
+	margin-bottom: 25%;
 }
 
 /* ensures that your images stretch the width of their containers */
@@ -97,21 +105,23 @@ p {
 	font-style: normal;	
 	padding: 5px 0px;
 	line-height: 1.2em;
-	font-size: 16px;
+	font-size: 20px;
 	/*margin-right: 10%;
 	margin-left: 10%;*/
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	width: 90%;
 	
 }
 
 footer{
-	background-color: #efefef;
 	bottom:0;
 	left:0;
 	right:0;
+	width: 10%;
+	margin-left: auto;
+	margin-right: 5%;
 }
 
 
@@ -165,7 +175,7 @@ footer{
 .homenav {
 	display: block;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 5vh;
+	font-size: 8vh;
     white-space: nowrap;
     width: 155%;
     position: relative;
@@ -189,14 +199,13 @@ footer{
 } 
 
 .icon {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     top: 5%;
     right: 0%;
     width: 40px;
     height: 45px;
     transform: translate(-50%, -50%);
-    display: block;
     z-index: 1000;
 
 }
@@ -295,25 +304,6 @@ footer{
 	outline: none;
 	}
 
-.list{
-	list-style-type: circle;
-	text-align: left;
-	position: center;
-	margin-left: 30px;
-}
-
-
-.li1 { 
-padding-top:10px;}
-
-.li2 { 
-padding-top:10px;}
-
-.li3 { 
-padding-top:10px;}
-
-.li4 { 
-padding-top:10px;}
 
 .parent {
 }
@@ -382,6 +372,16 @@ padding-top:10px;}
   animation: marquee 25s linear infinite;
 }
 
+.icon{
+	display: none;
+}
+
+.nav{
+	position: fixed;
+	display: none;
+	z-index: 2000;
+}
+
 .menu-desktop {
 	font-family: 'Montserrat', sans-serif;
     width: 100%;
@@ -421,6 +421,8 @@ padding-top:10px;}
         flex-direction: row;
         justify-content: space-between;
         display: block;
+        position: fixed;
+        z-index: 10;
     }
 
 header.nav, .menu-mobile {
@@ -428,23 +430,40 @@ header.nav, .menu-mobile {
     }
 
 .about img{ 
-	display: block;
-	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
-	
+	margin-left: 5%;
+	width: 40%;
+	margin-top: 0px;
 }
+
+p {
+	font-size: 16px;
+}
+
+.aboutinfo{
+	
+	width: 40%;
+	margin-left: auto;
+	margin-right: 15%;
+	margin-top: 50px;
+}
+
+h2{
+	text-align:right;
+	margin-right: 3%;
+}
+
 
 .parent {
 	display: inline-grid;
 	margin-left: auto;
 	margin-right: auto;
+	width: 80%;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	grid-column-gap: 10px;
 	padding: 5px;
 }
-
 
 
 .div1 { grid-area: 1 / 1 / 4 / 5; }
