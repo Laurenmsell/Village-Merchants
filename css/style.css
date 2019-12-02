@@ -44,24 +44,26 @@ h1 {
 	color: #E8A1A6;	
 	width: 200px;
 	text-align: center;
+	opacity: 0.75;
+
 
 
 }
 
-h2 {
+/*h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 30px;
+	font-size: 25px;
 	color: #E8A1A6;
 	line-height: 1.1;
 	display: block;
 	margin-bottom: 10px;
-	margin-right: auto;
+	margin-right:10px;
 	padding-top: 20px;
 	width: 600px;
 	text-align: center;
-}
+}*/
 
 h3 {
 	font-family: 'Montserrat', sans-serif;
@@ -76,6 +78,8 @@ h3 {
 	text-align: left;
 	width: 90%;
 	padding-top: 20px;
+	margin-left:10px;
+
 }
 
 /*header{
@@ -109,6 +113,7 @@ p {
 	margin-left: 10%;*/
 	display: block;
 	width: 90%;
+	margin-left:10px;
 
 }
 
@@ -122,27 +127,34 @@ footer{
 	margin-top: 400px;
 }
 
+/*.logo{
+	width:60px;
+	display:block;
+	margin-left: 15px;
+	margin-right: auto;
+	position: center;
+}*/
+
 .indexp{
-	margin-left: auto;
+	margin-bottom:100px;
 }
 
 .marquee {
 	height: 25px;
 	width: 100%;
 	font-family: serifa, serif;
-	font-weight: 400;
+	font-weight: 200;
 	font-style: normal;
 	overflow: hidden;
 	position: relative;
 	padding-top: 10px;
 	background-color: #E8A1A6;
 	color: white;
-
 	}
 
 .marquee div {
   display: block;
-  width: 100%;
+  width: 225%;
   height: 30px;
   position: absolute;
   overflow: hidden;
@@ -150,8 +162,9 @@ footer{
 }
 
 .marquee span {
-  float: left;
-  width: 50%;
+	display: block;
+	float: left;
+	width: 50%;
 }
 
 @keyframes marquee {
@@ -168,10 +181,10 @@ main{
 	width:100%;
 	margin: 0 auto
 }
-.section{
+/*.section{
 	width: 80%;
 	margin: 0 auto;
-}
+}*/
 /*.nav, .desktop {
     display: block;
     position: fixed;
@@ -193,6 +206,8 @@ main{
 	-webkit-text-stroke-color: #E8A1A6;
 	overflow: hidden;
 	padding-bottom: 10px;
+	opacity: 0.75;
+
 
 
 }
@@ -215,7 +230,7 @@ main{
     width: 40px;
     height: 45px;
     transform: translate(-50%, -50%);
-    z-index: 1000;
+    z-index: 2000;
 
 }
 
@@ -318,17 +333,17 @@ main{
 }
 
 .div1 { /*margin:5%;*/
-		padding-top:60px;
-		padding-left: 60px;
-		padding-right: 60px;
+		padding-top:30px;
+		padding-left: 30px;
+		padding-right: 30px;
 		text-align: center;
 	}
 .div2 { /*margin:5%;*/
-		padding: 60px;
+		padding: 30px;
 		text-align: center;	
 	}	
 .div3 {	/*margin:5%;*/
-		padding: 60px;
+		padding: 30px;
 		text-align: center;
 	}
 
@@ -343,7 +358,11 @@ main{
 
 @media only screen and (min-width: 768px) {
     /* START of desktop menu for 768 media query */
-    
+
+main{
+	width: 70%;
+}
+
 .homenav {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15vh;
@@ -434,6 +453,11 @@ main{
         z-index: 10;
     }
 
+ .aboutp {
+	margin-right: 40%;
+	margin-top:10px;
+}
+
 header.nav, .menu-mobile {
 	display: none;
     }
@@ -449,13 +473,13 @@ p {
 	font-size: 16px;
 }
 
-.aboutinfo{
+/*.aboutinfo{
 	
 	width: 40%;
 	margin-left: auto;
 /*	margin-right: 15%;
 	margin-top: 50px;*/
-}
+
 
 h2{
 	text-align:right;
@@ -485,11 +509,11 @@ h2{
 .div8 { grid-area: 10 / 10 / 13 / 13; }
 
 
-.logo {
+/*.logo {
 	height:100px;
 	width: 100px;
 	margin: 5% 60% 0% 50%;
-}
+}*/
 
 .home { 
 	margin-right: 70%;
@@ -502,11 +526,8 @@ h2{
 	width: 50%
 }
 
-.aboutp {
-	margin-right: 40%;
-	margin-top:10px;
 
-}
+
 h3 {
 	font-size: 20px;
 	text-align: left;
