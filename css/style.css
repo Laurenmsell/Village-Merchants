@@ -46,9 +46,6 @@ h1 {
 	width: 200px;
 	text-align: center;
 	opacity: 0.75;
-
-
-
 }
 
 h2 {
@@ -61,6 +58,8 @@ h2 {
 	padding-top: 20px;
 	width:90%;
 	text-align: left;
+	color: #E8A1A6;	
+	text-transform: capitalize;
 }
 
 h3 {
@@ -308,7 +307,7 @@ main{
 }
 
 .desktop, .menu-desktop, .menu-mobile {
-        display: none;
+	display: none;
     }
 
 .img{
@@ -483,12 +482,19 @@ header.nav, .menu-mobile {
 	width: 40%;
 	margin-top: 0px;
 }*/
+h2{
+	margin-left: -5px;
+	font-size: 15px;
+}
+
 h3{
 	margin-left: -5px;
 	font-size: 30px;
 	text-align: left;
 
 }
+
+
 
 p {
 	font-size: 16px;
